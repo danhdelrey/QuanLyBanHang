@@ -31,3 +31,24 @@ D:\ThuchanhCsharp\BaitapthuchanhSV\Chuong 7\QuanLyBanHang\QuanLyBanHang\obj\Debu
 D:\ThuchanhCsharp\BaitapthuchanhSV\Chuong 7\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhachHangTheoThanhPho.resources
 D:\ThuchanhCsharp\BaitapthuchanhSV\Chuong 7\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmHoaDonTheoKhachHang.resources
 D:\ThuchanhCsharp\BaitapthuchanhSV\Chuong 7\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmTacGia.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.AssemblyReference.cache
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form1.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form2.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmHoaDon.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmHoaDonTheoKhachHang.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhachHangTheoThanhPho.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhachHang.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmTacGia.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmThanhPho.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form3.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmNhanVien.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmSanPham.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDoiMatKhau.resources

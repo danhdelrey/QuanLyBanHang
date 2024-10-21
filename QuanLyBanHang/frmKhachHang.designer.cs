@@ -30,6 +30,11 @@
         {
             this.btnThoat = new System.Windows.Forms.Button();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenCty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhPho = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.DienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnReLoad = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.txtTenCty = new System.Windows.Forms.TextBox();
@@ -47,11 +52,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThanhPho = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.DienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.pnlThongTinKH.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +79,38 @@
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.Size = new System.Drawing.Size(770, 203);
             this.dgvKhachHang.TabIndex = 1;
+            // 
+            // MaKH
+            // 
+            this.MaKH.DataPropertyName = "MaKH";
+            this.MaKH.HeaderText = "Mã KH";
+            this.MaKH.Name = "MaKH";
+            // 
+            // TenCty
+            // 
+            this.TenCty.DataPropertyName = "TenCty";
+            this.TenCty.HeaderText = "Tên Cty";
+            this.TenCty.Name = "TenCty";
+            this.TenCty.Width = 250;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 200;
+            // 
+            // ThanhPho
+            // 
+            this.ThanhPho.DataPropertyName = "ThanhPho";
+            this.ThanhPho.HeaderText = "Thành Phố";
+            this.ThanhPho.Name = "ThanhPho";
+            // 
+            // DienThoai
+            // 
+            this.DienThoai.DataPropertyName = "DienThoai";
+            this.DienThoai.HeaderText = "Điện Thoại";
+            this.DienThoai.Name = "DienThoai";
             // 
             // btnReLoad
             // 
@@ -197,6 +229,7 @@
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(100, 20);
             this.txtMaKH.TabIndex = 15;
+            this.txtMaKH.TextChanged += new System.EventHandler(this.txtMaKH_TextChanged);
             // 
             // btnThem
             // 
@@ -237,38 +270,6 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // MaKH
-            // 
-            this.MaKH.DataPropertyName = "MaKH";
-            this.MaKH.HeaderText = "Mã KH";
-            this.MaKH.Name = "MaKH";
-            // 
-            // TenCty
-            // 
-            this.TenCty.DataPropertyName = "TenCty";
-            this.TenCty.HeaderText = "Tên Cty";
-            this.TenCty.Name = "TenCty";
-            this.TenCty.Width = 250;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa Chỉ";
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 200;
-            // 
-            // ThanhPho
-            // 
-            this.ThanhPho.DataPropertyName = "ThanhPho";
-            this.ThanhPho.HeaderText = "Thành Phố";
-            this.ThanhPho.Name = "ThanhPho";
-            // 
-            // DienThoai
-            // 
-            this.DienThoai.DataPropertyName = "DienThoai";
-            this.DienThoai.HeaderText = "Điện Thoại";
-            this.DienThoai.Name = "DienThoai";
             // 
             // frmKhachHang
             // 

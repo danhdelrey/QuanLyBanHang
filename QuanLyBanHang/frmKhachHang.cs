@@ -287,5 +287,10 @@ namespace QuanLyBanHang
             //Đóng kết nối
             conn.Close();
         }
+
+        private void txtMaKH_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
