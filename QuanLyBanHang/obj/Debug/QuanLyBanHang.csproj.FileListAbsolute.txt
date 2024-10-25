@@ -51,3 +51,7 @@ C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHan
 C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
 C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
 C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+<<<<<<< HEAD
+=======
+C:\Users\Danh Del Rey\Desktop\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDoiMatKhau.resources
+>>>>>>> fix-FR003
