@@ -56,17 +56,6 @@ namespace QuanLyBanHang
                 dtHoaDon.Clear();
                 daHoaDon.Fill(dtHoaDon);
 
-                // Đưa dữ liệu lên DataGridView
-                this.dgvHoaDon.DataSource = dtHoaDon;
-
-                // Đặt tiêu đề cột bằng tiếng Việt
-                dgvHoaDon.Columns[0].HeaderText = "Mã hóa đơn";
-                dgvHoaDon.Columns[1].HeaderText = "Mã khách hàng";
-                dgvHoaDon.Columns[2].HeaderText = "Mã nhân viên";
-                dgvHoaDon.Columns[3].HeaderText = "Ngày lập hóa đơn";
-                dgvHoaDon.Columns[4].HeaderText = "Ngày nhận hàng";
-
-                // Bổ sung thêm cho ví dụ 10.5
                 // Vận chuyển dữ liệu lên DataTable dtKhachHang dùng cho combobox
                 daKhachHang = new SqlDataAdapter("SELECT * FROM KhachHang", conn);
                 dtKhachHang = new DataTable();
@@ -78,6 +67,49 @@ namespace QuanLyBanHang
                 dtNhanVien = new DataTable();
                 dtNhanVien.Clear();
                 daNhanVien.Fill(dtNhanVien);
+
+                // Đưa dữ liệu lên DataGridView
+                this.dgvHoaDon.DataSource = dtHoaDon;
+
+                // Xóa tất cả các cột tự động tạo để định nghĩa lại
+                dgvHoaDon.AutoGenerateColumns = false;
+                dgvHoaDon.Columns.Clear();
+
+                // Tạo cột Mã Hóa Đơn
+                DataGridViewTextBoxColumn colMaHD = new DataGridViewTextBoxColumn();
+                colMaHD.HeaderText = "Mã hóa đơn";
+                colMaHD.DataPropertyName = "MaHD";  // Liên kết với cột MaHD trong bảng HoaDon
+                dgvHoaDon.Columns.Add(colMaHD);
+
+                // Tạo ComboBox cho cột Mã Khách Hàng
+                DataGridViewComboBoxColumn comboMaKH = new DataGridViewComboBoxColumn();
+                comboMaKH.HeaderText = "Mã khách hàng";
+                comboMaKH.DataSource = dtKhachHang;
+                comboMaKH.DisplayMember = "TenCty";  // Hiển thị tên công ty
+                comboMaKH.ValueMember = "MaKH";      // Giá trị là mã khách hàng
+                comboMaKH.DataPropertyName = "MaKH"; // Liên kết với cột MaKH trong bảng HoaDon
+                dgvHoaDon.Columns.Add(comboMaKH);
+
+                // Tạo ComboBox cho cột Mã Nhân Viên
+                DataGridViewComboBoxColumn comboMaNV = new DataGridViewComboBoxColumn();
+                comboMaNV.HeaderText = "Mã nhân viên";
+                comboMaNV.DataSource = dtNhanVien;
+                comboMaNV.DisplayMember = "Ten";     // Hiển thị tên nhân viên
+                comboMaNV.ValueMember = "MaNV";      // Giá trị là mã nhân viên
+                comboMaNV.DataPropertyName = "MaNV"; // Liên kết với cột MaNV trong bảng HoaDon
+                dgvHoaDon.Columns.Add(comboMaNV);
+
+                // Tạo cột Ngày Lập Hóa Đơn
+                DataGridViewTextBoxColumn colNgayLapHD = new DataGridViewTextBoxColumn();
+                colNgayLapHD.HeaderText = "Ngày lập hóa đơn";
+                colNgayLapHD.DataPropertyName = "NgayLapHD";
+                dgvHoaDon.Columns.Add(colNgayLapHD);
+
+                // Tạo cột Ngày Nhận Hàng
+                DataGridViewTextBoxColumn colNgayNhanHang = new DataGridViewTextBoxColumn();
+                colNgayNhanHang.HeaderText = "Ngày nhận hàng";
+                colNgayNhanHang.DataPropertyName = "NgayNhanHang";
+                dgvHoaDon.Columns.Add(colNgayNhanHang);
 
                 // Xóa các đối tượng trong Panel
                 this.txtMaHD.ResetText();

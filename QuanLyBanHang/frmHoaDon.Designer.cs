@@ -130,7 +130,6 @@
             this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHoaDon.Location = new System.Drawing.Point(26, 100);
             this.dgvHoaDon.Name = "dgvHoaDon";
-            this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvHoaDon.Size = new System.Drawing.Size(740, 196);
             this.dgvHoaDon.TabIndex = 7;
