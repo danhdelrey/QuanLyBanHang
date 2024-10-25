@@ -79,6 +79,7 @@
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.Size = new System.Drawing.Size(770, 203);
             this.dgvKhachHang.TabIndex = 1;
+            this.dgvKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellContentClick);
             // 
             // MaKH
             // 
@@ -213,6 +214,7 @@
             this.cbThanhPho.Name = "cbThanhPho";
             this.cbThanhPho.Size = new System.Drawing.Size(83, 21);
             this.cbThanhPho.TabIndex = 17;
+            this.cbThanhPho.SelectedIndexChanged += new System.EventHandler(this.cbThanhPho_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -229,7 +231,6 @@
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(100, 20);
             this.txtMaKH.TabIndex = 15;
-            this.txtMaKH.TextChanged += new System.EventHandler(this.txtMaKH_TextChanged);
             // 
             // btnThem
             // 

@@ -60,17 +60,21 @@ namespace QuanLyBanHang
                 //  Đưa dữ liệu lên ComboBox trong DataGridView   
                 (dgvKhachHang.Columns["ThanhPho"] as DataGridViewComboBoxColumn).DataSource = dtThanhPho;
                 (dgvKhachHang.Columns["ThanhPho"] as DataGridViewComboBoxColumn).DisplayMember = "TenThanhPho";
-                (dgvKhachHang.Columns["ThanhPho"] as DataGridViewComboBoxColumn).ValueMember = "ThanhPho"; 
+                (dgvKhachHang.Columns["ThanhPho"] as DataGridViewComboBoxColumn).ValueMember = "ThanhPho";
+
 
                 //Vận chuyển dữ liệu lên DataTable dtKhachHang
-                daKhachHang = new SqlDataAdapter("SELECT * FROM Khachhang", conn);
+                daKhachHang = new SqlDataAdapter("SELECT * FROM Khachhang WHERE DaXoa IS NULL", conn);
                 dtKhachHang = new DataTable();
                 dtKhachHang.Clear();
                 daKhachHang.Fill(dtKhachHang);
+                
                 //Đưa dữ liệu lên DataGridView
                 this.dgvKhachHang.DataSource = dtKhachHang;
                 //Thay đổi độ rộng cột
                 dgvKhachHang.AutoResizeColumns();
+
+                dgvKhachHang.ReadOnly = true;
 
                 //Bổ sung thêm cho ví dụ 10.5
 
@@ -79,6 +83,7 @@ namespace QuanLyBanHang
                 this.txtMaKH.ResetText();
                 this.txtTenCty.ResetText();
                 this.txtDienthoai.ResetText();
+                this.txtDiachi.ResetText();
                 //Không cho thao tác trên các nút Lưu / Hủy
                 this.btnLuu.Enabled = false;
                 this.btnHuy.Enabled = false;
@@ -128,8 +133,11 @@ namespace QuanLyBanHang
                 //Lấy MaKH của record hiện hành
                 string strMAKH = dgvKhachHang.Rows[r].Cells[0].Value.ToString();
                 //Viết câu lệnh SQL
-                cmd.CommandText = System.String.Concat("Delete from KhachHang where MaKH='" + strMAKH + "'");
+                //cmd.CommandText = System.String.Concat("Delete from KhachHang where MaKH='" + strMAKH + "'");
                 //cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = System.String.Concat("Update KhachHang Set DaXoa='x' where MaKH ='" + strMAKH + "';");
+
                 //Thực hiện câu lệnh SQL
                 cmd.ExecuteNonQuery();
                 //Cập nhật lại DataGridView
@@ -165,6 +173,7 @@ namespace QuanLyBanHang
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            this.txtMaKH.Enabled = true;
             //Kích hoạt biến Them
             Them = true;
             //Xóa trống các đối tượng trong Panel
@@ -182,6 +191,7 @@ namespace QuanLyBanHang
             this.btnXoa.Enabled = false;
             this.btnThoat.Enabled = false;
             //Đưa dữ liệu lên ComboBox
+            this.cbThanhPho.DropDownStyle = ComboBoxStyle.DropDownList;
             this.cbThanhPho.DataSource = dtThanhPho;
             this.cbThanhPho.DisplayMember = "TenThanhPho";
             this.cbThanhPho.ValueMember = "ThanhPho";
@@ -191,9 +201,11 @@ namespace QuanLyBanHang
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            this.txtMaKH.Enabled = false;
             //Kích hoạt biến Sửa
             Them = false;
             //Đưa dữ liệu lên ComboBox
+            this.cbThanhPho.DropDownStyle = ComboBoxStyle.DropDownList;
             this.cbThanhPho.DataSource = dtThanhPho;
             this.cbThanhPho.DisplayMember = "TenThanhPho";
             this.cbThanhPho.ValueMember = "ThanhPho";
@@ -230,21 +242,28 @@ namespace QuanLyBanHang
             {
                 try
                 {
-                    //Thực hiện lệnh
-                    SqlCommand cmd = new SqlCommand();
-                    cmd.Connection = conn;
-                    cmd.CommandType = CommandType.Text;
-                    //Lệnh Insert InTo
-                    cmd.CommandText = System.String.Concat("Insert into KhachHang values(" + "'" + 
-                        this.txtMaKH.Text.ToString() + "','" + this.txtTenCty.Text.ToString() + "','" +
-                        this.txtDiachi.Text.ToString() + "','" + this.cbThanhPho.SelectedValue.ToString() + "','" +
-                        this.txtDienthoai.Text.ToString() + "')");
-                    cmd.CommandType = CommandType.Text;
-                    cmd.ExecuteNonQuery();
-                    //Load lại dữ liệu trên DataGridView
-                    LoadData();
-                    //Thông báo
-                    MessageBox.Show("Đã thêm xong!");
+                    if (this.txtMaKH.Text.ToString().Length == 0 || this.txtTenCty.Text.ToString().Length == 0)
+                    {
+                        MessageBox.Show("Không thêm được. Lỗi rồi!");
+                    }
+                    else { 
+                        //Thực hiện lệnh
+                        SqlCommand cmd = new SqlCommand();
+                        cmd.Connection = conn;
+                        cmd.CommandType = CommandType.Text;
+                        //Lệnh Insert InTo
+                        cmd.CommandText = System.String.Concat("Insert into KhachHang values(" + "N'" + 
+                            this.txtMaKH.Text.ToString() + "',N'" + this.txtTenCty.Text.ToString() + "',N'" +
+                            this.txtDiachi.Text.ToString() + "',N'" + this.cbThanhPho.SelectedValue.ToString() + "',N'" +
+                            this.txtDienthoai.Text.ToString() + "')");
+                        cmd.CommandType = CommandType.Text;
+                        cmd.ExecuteNonQuery();
+                        //Load lại dữ liệu trên DataGridView
+                        LoadData();
+                        //Thông báo
+                        MessageBox.Show("Đã thêm xong!");
+                    }
+                    
                 }
                 catch (SqlException)
                 {
@@ -257,27 +276,36 @@ namespace QuanLyBanHang
             {
                 try
                 {
-                    //Thực hiện lệnh
-                    SqlCommand cmd = new SqlCommand();
-                    cmd.Connection = conn;
-                    cmd.CommandType = CommandType.Text;
-                    //Thứ tự dòng hiện hành
-                    int r = dgvKhachHang.CurrentCell.RowIndex;
-                    //MaKH hiện hành
-                    string strMAKH = dgvKhachHang.Rows[r].Cells[0].Value.ToString();
-                    //Câu lệnh SQL
-                    cmd.CommandText = System.String.Concat("Update KhachHang Set TenCty='"+
-                        this.txtTenCty.Text.ToString() + "', Diachi ='" + 
-                        this.txtDiachi.Text.ToString() + "', ThanhPho ='" + this.cbThanhPho.SelectedValue.ToString()
-                        + "', DienThoai ='" + this.txtDienthoai.Text.ToString() + "', MaKH ='" + this.txtMaKH.Text.ToString() + 
-                        "' where MaKH ='" + strMAKH + "'");
-                    //Cập nhật
-                    cmd.CommandType = CommandType.Text;
-                    cmd.ExecuteNonQuery();
-                    //Load lại dữ liệu lên trên DataGridView
-                    LoadData();
-                    //Thông báo
-                    MessageBox.Show("Đã sửa xong!");
+                    if (this.txtMaKH.Text.ToString().Length == 0 || this.txtTenCty.Text.ToString().Length == 0)
+                    {
+                        MessageBox.Show("Không sửa được. Lỗi rồi!");
+                    }
+                    else
+                    {
+                        
+                        
+                        //Thực hiện lệnh
+                        SqlCommand cmd = new SqlCommand();
+                        cmd.Connection = conn;
+                        cmd.CommandType = CommandType.Text;
+                        //Thứ tự dòng hiện hành
+                        int r = dgvKhachHang.CurrentCell.RowIndex;
+                        //MaKH hiện hành
+                        string strMAKH = dgvKhachHang.Rows[r].Cells[0].Value.ToString();
+                        //Câu lệnh SQL
+                        cmd.CommandText = System.String.Concat("Update KhachHang Set TenCty=N'" +
+                            this.txtTenCty.Text.ToString() + "', Diachi =N'" +
+                            this.txtDiachi.Text.ToString() + "', ThanhPho =N'" + this.cbThanhPho.SelectedValue.ToString()
+                            + "', DienThoai =N'" + this.txtDienthoai.Text.ToString() +
+                            "' where MaKH ='" + strMAKH + "'");
+                        //Cập nhật
+                        cmd.CommandType = CommandType.Text;
+                        cmd.ExecuteNonQuery();
+                        //Load lại dữ liệu lên trên DataGridView
+                        LoadData();
+                        //Thông báo
+                        MessageBox.Show("Đã sửa xong!");
+                    }
                 }
                 catch(SqlException)
                 {
@@ -288,7 +316,17 @@ namespace QuanLyBanHang
             conn.Close();
         }
 
-        private void txtMaKH_TextChanged(object sender, EventArgs e)
+        private void cbThanhPho_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cbThanhPho_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void dgvKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
