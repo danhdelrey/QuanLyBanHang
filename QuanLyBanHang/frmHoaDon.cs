@@ -47,39 +47,49 @@ namespace QuanLyBanHang
         {
             try
             {
-                //Khởi động kết nối
+                // Khởi động kết nối
                 conn = new SqlConnection(strConnectionString);
 
-                //Vận chuyển dữ liệu lên DataTable dtHoaDon
+                // Vận chuyển dữ liệu lên DataTable dtHoaDon
                 daHoaDon = new SqlDataAdapter("SELECT * FROM HoaDon", conn);
                 dtHoaDon = new DataTable();
                 dtHoaDon.Clear();
                 daHoaDon.Fill(dtHoaDon);
-                //Đưa dữ liệu lên DataGridView
+
+                // Đưa dữ liệu lên DataGridView
                 this.dgvHoaDon.DataSource = dtHoaDon;
 
-                //Bổ sung thêm cho ví dụ 10.5
-                //Vận chuyển dữ liệu lên DataTable dtKhachHang dùng cho combobox
+                // Đặt tiêu đề cột bằng tiếng Việt
+                dgvHoaDon.Columns[0].HeaderText = "Mã hóa đơn";
+                dgvHoaDon.Columns[1].HeaderText = "Mã khách hàng";
+                dgvHoaDon.Columns[2].HeaderText = "Mã nhân viên";
+                dgvHoaDon.Columns[3].HeaderText = "Ngày lập hóa đơn";
+                dgvHoaDon.Columns[4].HeaderText = "Ngày nhận hàng";
+
+                // Bổ sung thêm cho ví dụ 10.5
+                // Vận chuyển dữ liệu lên DataTable dtKhachHang dùng cho combobox
                 daKhachHang = new SqlDataAdapter("SELECT * FROM KhachHang", conn);
                 dtKhachHang = new DataTable();
                 dtKhachHang.Clear();
                 daKhachHang.Fill(dtKhachHang);
 
-                //Vận chuyển dữ liệu lên DataTable dtNhanVien dùng cho combobox
+                // Vận chuyển dữ liệu lên DataTable dtNhanVien dùng cho combobox
                 daNhanVien = new SqlDataAdapter("SELECT * FROM NhanVien", conn);
                 dtNhanVien = new DataTable();
                 dtNhanVien.Clear();
                 daNhanVien.Fill(dtNhanVien);
-                
-               //Xóa các đối tượng trong Panel
+
+                // Xóa các đối tượng trong Panel
                 this.txtMaHD.ResetText();
                 this.txtNgayLapHD.ResetText();
                 this.txtNgayNhanHang.ResetText();
-                //Không cho thao tác trên các nút Lưu / Hủy
+
+                // Không cho thao tác trên các nút Lưu / Hủy
                 this.btnLuu.Enabled = false;
                 this.btnHuy.Enabled = false;
                 this.pnlThongTinHD.Enabled = false;
-                //Cho thao tác trên các nút Thêm / Sửa / Xóa / Thoát
+
+                // Cho thao tác trên các nút Thêm / Sửa / Xóa / Thoát
                 this.btnThem.Enabled = true;
                 this.btnSua.Enabled = true;
                 this.btnXoa.Enabled = true;
@@ -300,5 +310,9 @@ namespace QuanLyBanHang
             LoadData();
         }
 
-   }
+        private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
 }
