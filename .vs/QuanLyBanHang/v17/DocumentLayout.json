@@ -3,27 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|c:\\users\\danh del rey\\desktop\\quanlybanhang\\quanlybanhang\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|c:\\users\\danh del rey\\desktop\\quanlybanhang\\quanlybanhang\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|solutionrelative:quanlybanhang\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\quanlybanhang\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|solutionrelative:quanlybanhang\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\quanlybanhang\\frmhoadontheokhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|solutionrelative:quanlybanhang\\frmhoadontheokhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\quanlybanhang\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|solutionrelative:quanlybanhang\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|c:\\users\\danh del rey\\desktop\\quanlybanhang\\quanlybanhang\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\quanlybanhang\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|solutionrelative:quanlybanhang\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|c:\\users\\danh del rey\\desktop\\quanlybanhang\\quanlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\quanlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|solutionrelative:quanlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|c:\\users\\danh del rey\\desktop\\quanlybanhang\\quanlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\quanlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|solutionrelative:quanlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|c:\\users\\danh del rey\\desktop\\quanlybanhang\\quanlybanhang\\frmdoimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\quanlybanhang\\frmdoimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|solutionrelative:quanlybanhang\\frmdoimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|c:\\users\\danh del rey\\desktop\\quanlybanhang\\quanlybanhang\\frmdoimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\quanlybanhang\\frmdoimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50DAC9E6-11C8-4E75-8C76-195EC459F5A8}|QuanLyBanHang\\QuanLyBanHang.csproj|solutionrelative:quanlybanhang\\frmdoimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -34,23 +46,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmKhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\frmKhachHang.cs",
+              "RelativeDocumentMoniker": "QuanLyBanHang\\frmKhachHang.cs",
+              "ToolTip": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\frmKhachHang.cs",
+              "RelativeToolTip": "QuanLyBanHang\\frmKhachHang.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAwwEgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T03:30:01.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "frmKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\frmKhachHang.cs",
+              "RelativeDocumentMoniker": "QuanLyBanHang\\frmKhachHang.cs",
+              "ToolTip": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\frmKhachHang.cs [Design]",
+              "RelativeToolTip": "QuanLyBanHang\\frmKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T03:29:59.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmHoaDonTheoKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\frmHoaDonTheoKhachHang.cs",
+              "RelativeDocumentMoniker": "QuanLyBanHang\\frmHoaDonTheoKhachHang.cs",
+              "ToolTip": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\frmHoaDonTheoKhachHang.cs [Design]",
+              "RelativeToolTip": "QuanLyBanHang\\frmHoaDonTheoKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T03:29:53.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\Form2.cs",
               "RelativeDocumentMoniker": "QuanLyBanHang\\Form2.cs",
               "ToolTip": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\Form2.cs [Design]",
               "RelativeToolTip": "QuanLyBanHang\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:37:32.145Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-21T03:37:32.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\Form1.cs",
               "RelativeDocumentMoniker": "QuanLyBanHang\\Form1.cs",
@@ -58,37 +104,34 @@
               "RelativeToolTip": "QuanLyBanHang\\Form1.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAcwB8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T01:54:10.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T01:54:10.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\Form1.cs",
               "RelativeDocumentMoniker": "QuanLyBanHang\\Form1.cs",
               "ToolTip": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\Form1.cs [Design]",
               "RelativeToolTip": "QuanLyBanHang\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T01:54:06.61Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-21T01:54:06.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\Form2.cs",
               "RelativeDocumentMoniker": "QuanLyBanHang\\Form2.cs",
               "ToolTip": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\Form2.cs",
               "RelativeToolTip": "QuanLyBanHang\\Form2.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwEAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T01:00:20.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T01:00:20.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "frmDoiMatKhau.cs",
               "DocumentMoniker": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\frmDoiMatKhau.cs",
               "RelativeDocumentMoniker": "QuanLyBanHang\\frmDoiMatKhau.cs",
@@ -96,20 +139,18 @@
               "RelativeToolTip": "QuanLyBanHang\\frmDoiMatKhau.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAqwHkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T00:50:49.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T00:50:49.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "frmDoiMatKhau.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\frmDoiMatKhau.cs",
               "RelativeDocumentMoniker": "QuanLyBanHang\\frmDoiMatKhau.cs",
               "ToolTip": "C:\\Users\\Danh Del Rey\\Desktop\\QuanLyBanHang\\QuanLyBanHang\\frmDoiMatKhau.cs [Design]",
               "RelativeToolTip": "QuanLyBanHang\\frmDoiMatKhau.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T00:50:46.548Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-21T00:50:46.548Z"
             }
           ]
         }
