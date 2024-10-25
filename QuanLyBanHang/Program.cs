@@ -23,7 +23,7 @@ namespace QuanLyBanHang
             //Application.Run(new frmNhanVien());
             //Application.Run(new frmHoaDon());
 
-            Application.Run(new Form1());
+            Application.Run(new Form2());
         }
     }
 }

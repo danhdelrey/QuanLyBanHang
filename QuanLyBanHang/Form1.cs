@@ -15,12 +15,17 @@ namespace QuanLyBanHang
         public Form1()
         {
             InitializeComponent();
+            this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
         }
 
         private void frmLogin()
         {
-            Form frm = new Form2();
-            frm.ShowDialog();
+            //Form frm = new Form2();
+            //frm.ShowDialog();
+        }
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
         private void XemDanhMuc(int intDanhMuc) {
@@ -31,7 +36,7 @@ namespace QuanLyBanHang
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            frmLogin();
+            //frmLogin();
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,6 +114,12 @@ namespace QuanLyBanHang
         private void tácGiảToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form frm = new frmTacGia();
+            frm.ShowDialog();
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmDoiMatKhau();
             frm.ShowDialog();
         }
     }
